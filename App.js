@@ -32,6 +32,18 @@ const filmes = [
     imagem:
       "https://upload.wikimedia.org/wikipedia/en/3/3c/Ice_Age_%282002_film%29_poster.jpg",
   },
+  {
+    nome: "O Senhor dos Anéis: A Sociedade do Anel",
+    genero: "Fantasia",
+    imagem:
+      "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/34/89/20194741.jpg",
+  },
+  {
+    nome: "Os smurfs",
+    genero: "Animação",
+    imagem:
+      "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/32/77/19874357.jpg",
+  },
 ];
 
 const ListaFilmes = () => {
