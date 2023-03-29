@@ -15,7 +15,7 @@ const filmes = [
       "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg",
   },
   {
-    nome: "Forrest Gump: O Contador de Histórias",
+    nome: "Forrest Gump",
     genero: "Drama",
     imagem:
       "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
@@ -33,7 +33,7 @@ const filmes = [
       "https://upload.wikimedia.org/wikipedia/en/3/3c/Ice_Age_%282002_film%29_poster.jpg",
   },
   {
-    nome: "O Senhor dos Anéis: A Sociedade do Anel",
+    nome: "O Senhor dos Anéis",
     genero: "Fantasia",
     imagem:
       "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/34/89/20194741.jpg",
@@ -67,7 +67,7 @@ const ListaFilmes = () => {
 export default function App() {
   return (
     <View style={styles.content}>
-      <Text style={styles.title}>Meus Filmes</Text>
+      <Text style={styles.title}>MyFilms</Text>
       <ListaFilmes />
     </View>
   );
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: "bold",
-    color: "#fff",
+    color: "red",
     textAlign: "center",
     backgroundColor: "#000",
     height: 60,
@@ -88,5 +88,6 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    backgroundColor: "#212121",
   },
 });
