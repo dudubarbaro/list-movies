@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, ScrollView, StyleSheet, Text } from "react-native";
 import Filme from "./src/components/Filme";
+import { LinearGradient } from "expo-linear-gradient";
 
 const filmes = [
   {
@@ -66,28 +67,40 @@ const ListaFilmes = () => {
 
 export default function App() {
   return (
-    <View style={styles.content}>
-      <Text style={styles.title}>MyFilms</Text>
-      <ListaFilmes />
-    </View>
+    <LinearGradient colors={["#eee", "#f5f5f5"]} style={styles.gradient}>
+      <View style={styles.content}>
+        <Text style={styles.title}>MyFilms</Text>
+        <ListaFilmes />
+      </View>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: "bold",
-    color: "red",
+    color: "black",
     textAlign: "center",
-    backgroundColor: "#000",
-    height: 60,
-    paddingTop: 10,
+    backgroundColor: "#eee",
+    height: 100,
+    paddingTop: 40,
+    opacity: 100,
   },
   scroll: {
     padding: 20,
   },
   content: {
     flex: 1,
-    backgroundColor: "#212121",
+    backgroundColor: "#fffafa",
+    backgroundColor: "rgba(255, 255, 255, 0.0)",
+    borderRadius: 10,
+    marginTop: 20,
+    marginBottom: 20,
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  gradient: {
+    flex: 1,
   },
 });

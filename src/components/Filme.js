@@ -27,30 +27,40 @@ const Filme = ({ filme, onRemove }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 20,
-    backgroundColor: "#000",
-    borderRadius: 10,
+    marginBottom: 35,
+    backgroundColor: "#f5f5f5",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
+    width: "90%",
+    borderRadius: 30,
+    alignSelf: "center",
+    
   },
   center: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    paddingTop: 20,
   },
   image: {
-    width: "80%",
+    width: "70%",
     height: 300,
     resizeMode: "stretch",
-    borderRadius: 10,
   },
   text: {
     fontSize: 20,
     fontWeight: "bold",
     marginBottom: 5,
-    color: "white",
+    color: "black",
   },
   text2: {
     fontSize: 16,
-    color: "white",
+    color: "black",
   },
   delete: {
     justifyContent: "space-between",
