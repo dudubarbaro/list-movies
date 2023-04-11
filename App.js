@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { View, ScrollView, StyleSheet, Text } from "react-native";
 import Filme from "./src/components/Filme";
 import { LinearGradient } from "expo-linear-gradient";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+// import { NavigationContainer } from "@react-navigation/native";
+// import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Provider as PaperProvider } from "react-native-paper";
 
 import CardFilme from "./screens/CardFilme";
@@ -70,21 +70,21 @@ const ListaFilmes = () => {
   );
 };
 
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <PaperProvider>
-      <NavigationContainer>
-        <Stack.Navigator>
+      {/* <NavigationContainer> */}
+        {/* <Stack.Navigator> */}
           <LinearGradient colors={["#eee", "#f5f5f5"]} style={styles.gradient}>
             <View style={styles.content}>
               <Text style={styles.title}>MyFilms</Text>
               <ListaFilmes />
             </View>
           </LinearGradient>
-        </Stack.Navigator>
-      </NavigationContainer>
+        {/* </Stack.Navigator> */}
+      {/* </NavigationContainer> */}
     </PaperProvider>
   );
 }
